@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3DRender</string>
+     <string name="app_back">Back</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="teapot">teapot</string>
+    <string name="cube">cube</string>
+    <string name="cow">cow</string>
+    <string name="bunny">"bunny"</string>
+    <string name="sphere">sphere</string>
+    <string name="torus">torus</string>
+    <string name="cylinder">cylinder</string>
+    <string name="cactus">"cactus"</string>
+    
+    <string name="Ambient">AmbientColor</string>
+    <string name="amred">RedRender</string>
+    <string name="amgreen">GreenRender</string>
+    <string name="amblue">BlueRender</string>
+     <string name="amcyan">CyanRender</string>
+    <string name="amnone">NoneAmbient</string>
+    
+    <string name="Diffuse">DiffuseColor</string>
+    <string name="diyellow">YellowRender</string>
+    <string name="dipink">PinkRender</string>
+    <string name="dibrown">BrownRender</string>
+    <string name="diPurple">PurpleRender</string>
+    <string name="dinone">NoneDiffuse</string>
+    
+    <string name="Shine">ShineColor</string>
+    <string name="shCoral">CoralRender</string>
+    <string name="shWheat">WheatRender</string>
+    <string name="shGold">GoldRender</string>
+    <string name="shWood">WoodRender</string>
+    <string name="shnone">NoneShine</string>
+  
+    <string name="hardLight">HardLight</string>
+    <string name="lowLight">LowLight</string>
+    <string name="moderateLight">GentleLight</string>
+    <string name="ambientLight">AmbientLight</string>
+    <string name="diffuseLight">DiffuseLight</string>
+    <string name="shineLight">ShinetLight</string>
+    <string name="noneLight">NoneLight</string>
+   
+
+     
+    
+    
+
+</resources>

@@ -1,0 +1,7 @@
+package com.example.drender;
+
+public enum lightEnum {
+	flag,AMHARD,AMMODERATE,AMLOW,AMNONE,
+	DIHARD,DIMODERATE,DILOW,DINONE,
+	SHHARD,SHMODERATE,SHLOW,SHNONE
+}

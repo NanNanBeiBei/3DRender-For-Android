@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<TabHost android:id="@+id/tabhost"  xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical" 
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent">  
+    <RelativeLayout 
+        android:id="@+id/relative"
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">  
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+          />
+  
+        <FrameLayout android:id="@android:id/tabcontent"  
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent"> 
+              <LinearLayout
+                  android:id="@+id/tab1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="510dp"
+                  android:orientation="vertical" >
+            </LinearLayout> 
+                   
+            <LinearLayout  android:id="@+id/tab2"
+                android:orientation="vertical"  
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"  
+               >  
+           <RadioGroup
+               android:id="@+id/modelone"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/white"
+               android:checkedButton="@integer/abc_max_action_buttons" >
+            <RadioButton
+                android:id="@+id/teapot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableLeft="@drawable/tea"
+                android:text="@string/teapot"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+            <RadioButton
+              android:id="@+id/cow"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/cow"
+              android:text="@string/cow"
+              android:textSize="16sp"/> 
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />      
+             <RadioButton
+              android:id="@+id/cube"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/cube"
+              android:text="@string/cube"/> 
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+              <RadioButton
+              android:id="@+id/bunny"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/bunny"
+              android:text="@string/bunny"/> 
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+              <RadioButton
+              android:id="@+id/sphere"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/sphere"
+              android:text="@string/sphere"/> 
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+               <RadioButton
+              android:id="@+id/torus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/torus"
+              android:text="@string/torus"/> 
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+               <RadioButton
+              android:id="@+id/cylinder"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/cylinder"
+              android:text="@string/cylinder"/> 
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+               <RadioButton
+              android:id="@+id/cactus"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:drawableLeft="@drawable/cactus"
+              android:text="@string/cactus"/> 
+            </RadioGroup>
+            </LinearLayout>  
+            
+            
+        
+            <LinearLayout android:id="@+id/tab3"
+                android:orientation="vertical"  
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" >  
+
+               <RelativeLayout
+                   android:id="@+id/relativeimg"
+                   android:layout_width="fill_parent"
+                   android:layout_height="80dp"
+                   android:layout_marginTop="25dp"
+                   android:background="@drawable/white">
+
+                <ImageView
+                    android:id="@+id/imgv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="0dp"
+                    android:src="@drawable/maker" />
+
+                <TextView
+                    android:id="@+id/title"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_toRightOf="@+id/imgv"
+                    android:text="3D模型渲染"
+                    android:textColor="@drawable/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="?android:attr/tabWidgetStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/imgv"
+                    android:text="版权所有：Lifada"
+                    android:textSize="15dp"
+                    android:textColor="@drawable/black" />
+
+                 </RelativeLayout> 
+    
+                <Button
+                 android:id="@+id/light"
+                 android:layout_marginTop="20dp"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center_vertical"
+                 android:background="@drawable/selector"
+                 android:drawableLeft="@drawable/light"
+                 android:drawablePadding="10dp"
+                 android:paddingLeft="20dp"
+                 android:paddingRight="20dp"
+                 android:text="Light" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+                <Button
+                    android:id="@+id/color"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                   android:background="@drawable/selector"
+                    android:drawableLeft="@drawable/color"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Color" />
+
+               
+                
+           </LinearLayout>  
+     
+        </FrameLayout>  
+    </RelativeLayout>  
+</TabHost> 

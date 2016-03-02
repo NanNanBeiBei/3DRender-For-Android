@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+            <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"  
+            android:id="@+id/tab3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            > 
+            <LinearLayout 
+                android:orientation="vertical"  
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" >  
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                  android:text="@string/ambientLight" />
+
+            <RadioGroup
+                android:id="@+id/ambientLight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white" 
+                android:checkedButton="@integer/abc_max_action_buttons" >
+            <RadioButton
+                 android:id="@+id/amHigh"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableLeft="@drawable/red"
+                 android:text="@string/hardLight"
+                 android:textSize="16sp"/>
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+            <RadioButton
+                 android:id="@+id/amModerate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"       
+                 android:drawableLeft="@drawable/green"
+                 android:text="@string/moderateLight"
+                 android:textSize="16sp"/> 
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />     
+            <RadioButton
+                 android:id="@+id/amLow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lowLight"
+                 android:drawableLeft="@drawable/blue"
+                 android:textSize="16sp" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+             <RadioButton
+                 android:id="@+id/amNone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/noneLight"
+                 android:drawableLeft="@drawable/cyan"
+                 android:textSize="16sp" />
+           </RadioGroup>
+           <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/diffuseLight" />
+           <RadioGroup
+                 android:id="@+id/diffuseLight"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/white" 
+                 android:checkedButton="@integer/abc_max_action_buttons">
+           <RadioButton
+                 android:id="@+id/diHigh"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableLeft="@drawable/yellow"
+                 android:text="@string/hardLight"
+                 android:textSize="16sp"/>
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+           <RadioButton
+                 android:id="@+id/diModerate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"              
+                 android:drawableLeft="@drawable/pink"
+                 android:text="@string/moderateLight"
+                 android:textSize="16sp"/>
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+               <RadioButton
+                 android:id="@+id/diLow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lowLight"
+                 android:drawableLeft="@drawable/brown"
+                 android:textSize="16sp" />
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+                 <RadioButton
+                 android:id="@+id/diNone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/noneLight"
+                 android:drawableLeft="@drawable/purple"
+                 android:textSize="16sp" />
+           </RadioGroup>
+    
+           <TextView
+                 android:id="@+id/textView3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/shineLight" />
+           
+          <RadioGroup
+                 android:id="@+id/shLight"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/white"
+                 android:checkedButton="@integer/abc_max_action_buttons" >
+           <RadioButton
+                 android:id="@+id/shHigh"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableLeft="@drawable/coral"
+                 android:text="@string/hardLight"
+                 android:textSize="16sp"/>
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" /> 
+           <RadioButton
+                 android:id="@+id/shModerate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableLeft="@drawable/wheat"
+                 android:text="@string/moderateLight"
+                 android:textSize="16sp"/>   
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />     
+           <RadioButton
+                 android:id="@+id/shLow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lowLight"
+                 android:drawableLeft="@drawable/gold"
+                 android:textSize="16sp" />
+           <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#E8E8E8" />
+            <RadioButton
+                 android:id="@+id/shNone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/noneLight"
+                 android:drawableLeft="@drawable/wood"
+                 android:textSize="16sp" />    
+           </RadioGroup>
+           </LinearLayout>  
+           </ScrollView>   
+  
