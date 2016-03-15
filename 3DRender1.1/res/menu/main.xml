@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.drender.MainActivity" >
+
+    <item
+        android:id="@+id/texture"
+        android:orderInCategory="100"
+        android:title="@string/texture"
+        android:showAsAction="never"/>
+    
+      <item
+        android:id="@+id/light"
+        android:orderInCategory="100"
+        android:title="@string/light"
+        android:showAsAction="never"/>
+      
+      <item
+        android:id="@+id/tunnel"
+        android:orderInCategory="100"
+        android:title="@string/tunnel"
+        android:showAsAction="never"/>
+      
+      
+      <item
+        android:id="@+id/twist"
+        android:orderInCategory="100"
+        android:title="@string/twist"
+        android:showAsAction="never"/>
+      
+         <item
+        android:id="@+id/mandel"
+        android:orderInCategory="100"
+        android:title="@string/mandel"
+        android:showAsAction="never"/>
+         
+          <item
+        android:id="@+id/activity"
+        android:orderInCategory="100"
+        android:title="@string/activity"
+        android:showAsAction="never"/>
+         
+
+</menu>

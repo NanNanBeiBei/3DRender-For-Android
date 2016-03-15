@@ -1,0 +1,14 @@
+// twist by iq
+precision mediump float;
+varying vec2 vTexCoord;
+uniform sampler2D sTexture;
+uniform float time;
+void main() {
+	// convert to polar coords
+    float a = atan(vTexCoord.x, vTexCoord.y);
+    float r = length(vTexCoord);
+    //vec2 uv = vec2(r - 0.25*time, cos(a*5.0 + 2.0*sin(time + 7.0*r)));
+    vec2 uv = vec2(7.0*a / 3.1416, -time + sin(7.0*r+time) + 0.7*cos(time+7.0*a))*0.5;
+    vec4 finalColor = texture2D(sTexture, uv);
+    gl_FragColor = finalColor;
+}

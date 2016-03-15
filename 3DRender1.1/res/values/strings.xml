@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">3DViewer</string>
+    <string name="texture">Texture</string>
+    <string name="light">Lighting</string>
+    <string name="tunnel">Tunnel</string>
+    <string name="twist">Twist</string>
+    <string name="mandel">Mandel</string>
+    <string name="activity">Activity</string>
+    
+    <string name="display">Display</string>
+    <string name="nativeModel">NativeModel</string>
+   
+</resources>

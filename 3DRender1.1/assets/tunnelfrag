@@ -1,0 +1,12 @@
+precision mediump float;
+varying vec2 vTexCoord;
+uniform sampler2D sTexture;
+uniform float time;
+void main() {
+	float a = atan(vTexCoord.x, vTexCoord.y);
+	float r = length(vTexCoord);
+	vec2 uv = vec2(0.25*time + 0.1/r, a/3.1416); 
+	//gl_FragColor = texture2D(sTexture, uv)*r;
+	vec4 finalColor=texture2D(sTexture, uv)*r;
+	gl_FragColor = finalColor*vec4(1.0,1.0,1.0,1.0)+finalColor*vec4(1.0,1.0,1.0,1.0)+finalColor*vec4(1.0,1.0,1.0,1.0);
+}

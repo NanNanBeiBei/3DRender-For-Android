@@ -1,0 +1,12 @@
+uniform mat4 uMVPMatrix;
+uniform float time;
+uniform float resolutionX;
+uniform float resolutionY;
+attribute vec4 aPosition;
+attribute vec2 aTexCoord;
+varying vec2 vTexCoord;
+void main() {
+    gl_Position = uMVPMatrix * aPosition;
+    vTexCoord = aTexCoord*2.0-1.0;
+    vTexCoord.x = vTexCoord.x * (resolutionX/ resolutionY);
+}

@@ -1,0 +1,12 @@
+precision mediump float;
+//接收从顶点着色器过来的参数
+varying vec4 ambient;
+varying vec4 diffuse;
+varying vec4 specular;
+
+void main()                         
+{    
+  
+   vec4 bColor=vec4(1.0,0.95,0.9,0);
+   gl_FragColor = bColor*ambient+bColor*specular+bColor*diffuse;  
+}
